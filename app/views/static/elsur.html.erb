@@ -1,0 +1,33 @@
+<div class="publication container">
+  <div class="main">
+    <div class="info">
+      <%= title 'El sur: instrucciones de uso' %>
+      <p>Por <%= link_to 'Autoediciones Bucólicas', '#' %></p>
+    </div>
+    <div class="controls">
+      <a href="/pdf/El-sur.pdf">
+        <%= image_tag '/imagenes/ui/play_big.png', alt: 'Descargar PDF completo' %>
+      </a>
+    </div>
+    <div class="content">
+      <p>La luz del sur. El buen calor. La cerveza.</p>
+
+      <p>12 Relatos de Silvia Nanclares<br/>
+        12 Collages de Enrique Lafuente<br/>
+        Prólogo de Carolina León</p>
+    </div>
+
+    <ul class="links">
+      <li>&rArr;&nbsp;<%= link_to 'Comprar edición impresa', 'http://tinypay.me/~UGJ5Rbk' %> 11.0€</li>
+      <li>&rArr;&nbsp;<%= link_to 'Descargar PDF completo', '/pdfs/El-sur.pdf' %> Gratuíto</li>
+    </ul>
+
+    <div class="licenses">
+      <%= image_tag '/imagenes/licencias/CC-BY-SA-icon-80x15.png' %>
+    </div>
+
+  </div>
+  <div class="cover">
+    <%= image_tag '/imagenes/elsur/portada.jpg', width: '259', height: '400' %>
+  </div>
+</div>

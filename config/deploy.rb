@@ -4,13 +4,13 @@
 load 'deploy/assets'
 
 # default_run_options[:pty] = true
-set :application, "Casamasomenos"
+set :application, "Bucolicas"
 set :deploy_to, "/home/deploy/#{application}"
 set :user, "deploy"
 set :use_sudo, false
 
 set :scm, "git"
-set :repository,  "git://github.com/recortable/Casamasomenos.git"
+set :repository,  "git://github.com/recortable/Bucolicas.git"
 set :branch, "master"
 set :deploy_via, :remote_cache
 set :scm_verbose, false

@@ -1,0 +1,46 @@
+
+$s-width: 975px;
+$c-link: #0c0;
+
+html {
+    font: 13px/1.5 Helvetica Neue,Arial,Helvetica,'Liberation Sans',FreeSans,sans-serif;
+    background: url('/imagenes/logo/logo_peque.jpg') repeat;
+}
+body {background-color: transparent;}
+a {color: #0c0; }
+a:hover {color: #0E0;}
+
+div.container {width: 100%; overflow: hidden;}
+
+#page {
+    width: $s-width;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#header {
+    width: 100%; overflow: hidden;
+}
+
+div.publication {
+    margin-top: 10px;
+    padding-bottom: 50px;
+    div.main {float: left; width: 500px; margin-left: 20px; }
+    div.cover { float: left; width: 300px; }
+
+    div.content {
+        margin: 20px 0;
+    }
+
+    .info {
+        h1 {margin-bottom: 0;}
+    }
+
+    ul.links {
+        margin: 0;
+        li {list-style-type: none;}
+    }
+
+    div.licenses {margin-top: 30px;}
+
+}
