@@ -93,3 +93,5 @@ namespace :mysql do
     get file, "tmp/#{filename}"
   end
 end
+
+load 'config/deploy/unicorn'
