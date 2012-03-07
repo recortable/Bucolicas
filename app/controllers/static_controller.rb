@@ -1,6 +1,6 @@
 # encoding: utf-8
 class StaticController < ApplicationController
-  caches_page :elsur
+  caches_page :elsur, :remix
 
   CHAPTER = {
       names: ['0. Prefacio: Itinerario del empoderamiento posible ',
