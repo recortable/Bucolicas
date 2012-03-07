@@ -22,7 +22,34 @@ class StaticController < ApplicationController
   end
 
   def remix
+    @remixes = []
+    add_remix('108211', 'María Toraño', '108211.maria_t.pdf')
+    add_remix('La sombra de Raquel/Aniko', 'aniko.chainsaw_gore', 'aniko.chainsaw_gore.pdf')
+    add_remix('Remezcla del Sur - Meditaciones Metafísicas', 'Antonia Llera', 'antonia.llera.version.pdf')
+    add_remix('Arenas', 'Mercedes Figueroa', 'Arenas.mercedes.figueroa.pdf')
+    add_remix('Beso sin brújula', 'Erica', 'Besosinbrujula.erica.pdf')
+    add_remix('Como pasé de ser una perra figurante a una verdadera bookcamper', 'Soraya González', 'como.pase.de.perra.figurante.soraya.glez.pdf')
+    add_remix('El noroeste', 'Elena Cabrera', 'Elnoroeste.elena.cabrera.pdf')
+    add_remix('La vida en Alaska', 'Camila Monasterio', 'lavidaenalaska.camila.monasterio.pdf')
+    add_remix('Vida Londinense', 'Bertha Restrepo', 'LaVidaLondinense.bertha.restrepo.pdf')
+    add_remix('Me gusta', 'Blup', 'megusta.re.sur.es.blup.pdf')
+    add_remix('Mujeres y hombres de antes y ahora', 'Gema', 'MUJERESYHOMBRESDEANTESYAHORA.Gema.pdf')
+    add_remix('Patrimonio de mocitas / La sombra de Aniko', 'Amparo R. Peno', 'Patrimonio.de.mocitas.Amparo.R.Peno.pdf')
+    add_remix('Poema a El Sur', 'Soledad Hernández de La Rosa', 'POEMA.ELSUR.sole.hdez.rosa.pdf')
+    add_remix('Puentes que recuerdan dónde vivimos', 'María Glez Olmo', 'Puentes.vivimos.glez.olmo.pdf')
+    add_remix('Puentes que amanecen mientras (no) dormimos', '@iguazelelhombre', 'Puentesqueamanecen.iguazel.pdf')
+    add_remix('Remezcla del relatio "Mediana"', 'Rocío Trejo', 'Remezcla_Ro_Trejo_Mediana_ElSur.pdf')
+    add_remix('El Sur', 'Gloria Santana', 'Sur.version.gloria.santana.pdf')
+    add_remix('Un río. Un puente.', 'Fernanda Mangoderosa', 'un.rio.un.puente.fernanda.mangoderosa.pdf')
+    add_remix('Una ciudad luminosa', 'Blanca', 'Unaciudadluminosa.BL.pdf')
+    add_remix('Un relato', 'Albertine', 'unrelato.albertine.pdf')
+    add_remix('Wild Word', 'La Señora Dubois', 'WILDWORLD.dubois.pdf')
+    add_remix('Y si una no lo hace...', 'Anónima', 'Ysi.anonim.pdf')
+  end
 
+  protected
+  def add_remix(title, author, pdf)
+    @remixes << {title: title, author: author, file: pdf}
   end
 end
 

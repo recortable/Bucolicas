@@ -1,4 +1,20 @@
-<div class="container">
-  <h1>Zona de remezclas</h1>
-  <p>En construcción</p>
+<div class="publication container">
+  <div class="main">
+    <h1>Remezclas de <%= link_to 'El Sur', '/' %></h1>
+
+    <div class="remixes list">
+      <% @remixes.each do |remix| %>
+          <div class="remix item">
+            <a href="/remezclas/<%= remix[:file] %>">
+              <%= image_tag 'ui/play.png', alt: 'Descargar PDF del capítulo', width: 17, height: 17 %>
+              <%= remix[:title] %></a>. Por <%= remix[:author] %>
+          </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="cover">
+    <%= image_tag 'elsur/portada.jpg', width: '259', height: '400' %>
+    <%= link_to '¡Nuevo! Zona de remezclas', '/remezclas', class: 'remix' %>
+  </div>
+
 </div>

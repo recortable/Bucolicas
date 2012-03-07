@@ -2,6 +2,7 @@
 # setup deploy: http://www.capify.org/getting-started/from-the-beginning/
 
 load 'deploy/assets'
+require "bundler/capistrano"
 
 # default_run_options[:pty] = true
 set :application, "Bucolicas"

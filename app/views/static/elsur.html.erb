@@ -4,9 +4,13 @@
       <%= title 'El sur: instrucciones de uso' %>
       <p>Por <%= link_to 'Autoediciones Bucólicas', '#' %></p>
     </div>
+    <div class="buy">
+      <a href="https://tinypay.me/~UGJ5Rbk" style="display:inline-block;"><img src="https://s3.amazonaws.com/img.tinypay.me/btn/UGJ5Rbk" border="0"/></a>
+    </div>
     <div class="controls">
       <a href="/pdf/El-sur.pdf">
         <%= image_tag 'ui/play_big.png', alt: 'Descargar PDF completo', width: 47, height: 45 %>
+        <div class="length">110 páginas</div>
       </a>
     </div>
     <div class="content">
@@ -17,22 +21,24 @@
         Prólogo de Carolina León</p>
     </div>
 
-    <div class="chapters">
+    <ul class="links">
+      <li>&rArr;&nbsp;<%= link_to 'Comprar edición impresa', 'http://tinypay.me/~UGJ5Rbk' %> 11€</li>
+      <li>&rArr;&nbsp;<%= link_to 'Descargar PDF completo', '/pdf/El-sur.pdf' %> Gratuíto</li>
+    </ul>
+
+    <div class="chapters list">
+      <h2>Índice</h2>
       <% @chapters.each do |name, file| %>
-      <div class="chapter">
-        <a href="/capitulos/<%= file %>.pdf">
-          <%= image_tag 'ui/play.png', alt: 'Descargar PDF del capítulo', width: 17, height: 17 %>
-          <%= name %>
-        </a>
-      </div>
+          <div class="chapter item">
+            <a href="/capitulos/<%= file %>.pdf">
+              <%= image_tag 'ui/play.png', alt: 'Descargar PDF del capítulo', width: 17, height: 17 %>
+              <%= name %>
+            </a>
+          </div>
       <% end %>
     </div>
 
 
-    <ul class="links">
-      <li>&rArr;&nbsp;<%= link_to 'Comprar edición impresa', 'http://tinypay.me/~UGJ5Rbk' %> 11.0€</li>
-      <li>&rArr;&nbsp;<%= link_to 'Descargar PDF completo', '/pdf/El-sur.pdf' %> Gratuíto</li>
-    </ul>
 
 
     <div class="licenses">

@@ -27,6 +27,14 @@ div.container {width: 100%; overflow: hidden;}
     height: 170px;
 }
 
+div.buy {float: right; }
+
+div.controls {
+  width: 50%; overflow: hidden;
+  img {float: left; margin-right: 10px;}
+  .length {margin-top: 13px; font-size: 18px; color: $c-text;}
+}
+
 div.publication {
     margin-top: 20px;
     padding-bottom: 50px;
@@ -50,25 +58,21 @@ div.publication {
 
 }
 
-div.links {
-  width: 100%; overflow: hidden;
-  margin-bottom: 10px;
-  a {
-    display: block;
-    padding: 5px 10px;
-    float: left;
-    border: 1px solid $c-link;
-    margin: -1px 0 0 -1px;
-    color: $c-text;
-  }
+
+ul.links {
+  font-size: 130%;
+  li {margin: 10px 0;}
 }
 
-div.chapters {
-  margin: 10px 0 30px 0;
-  div.chapter {
+div.list {
+  margin: 30px 0 30px 0;
+
+  h2 {margin-bottom: 10px;}
+  div.item {
+    width: 100%; overflow: hidden;
     padding: 0px 0;
 
-    img {margin-top: 5px; margin-bottom: -3px;}
+    img {float: left; margin: 0 1em 0.5em 0;}
   }
 }             
 
