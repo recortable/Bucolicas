@@ -17,10 +17,23 @@
         Prólogo de Carolina León</p>
     </div>
 
+    <div class="chapters">
+      <% @chapters.each do |name, file| %>
+      <div class="chapter">
+        <a href="/capitulos/<%= file %>.pdf">
+          <%= image_tag 'ui/play.png', alt: 'Descargar PDF del capítulo', width: 17, height: 17 %>
+          <%= name %>
+        </a>
+      </div>
+      <% end %>
+    </div>
+
+
     <ul class="links">
       <li>&rArr;&nbsp;<%= link_to 'Comprar edición impresa', 'http://tinypay.me/~UGJ5Rbk' %> 11.0€</li>
       <li>&rArr;&nbsp;<%= link_to 'Descargar PDF completo', '/pdf/El-sur.pdf' %> Gratuíto</li>
     </ul>
+
 
     <div class="licenses">
       <%= image_tag 'licencias/CC-BY-SA-icon-80x15.png' %>
@@ -29,5 +42,6 @@
   </div>
   <div class="cover">
     <%= image_tag 'elsur/portada.jpg', width: '259', height: '400' %>
+    <%= link_to '¡Nuevo! Zona de remezclas', '/remezclas', class: 'remix' %>
   </div>
 </div>

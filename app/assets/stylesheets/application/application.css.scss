@@ -1,6 +1,7 @@
 
 $s-width: 975px;
 $c-link: #0c0;
+$c-text: rgb(64, 64, 64);
 
 html {
     font: 13px/1.5 Helvetica Neue,Arial,Helvetica,'Liberation Sans',FreeSans,sans-serif;
@@ -17,13 +18,17 @@ div.container {width: 100%; overflow: hidden;}
     background-color: white;
 }
 
+#session {
+  .name {font-weight: bold;}
+}
+
 #header {
     width: 100%; overflow: hidden;
     height: 170px;
 }
 
 div.publication {
-    margin-top: 10px;
+    margin-top: 20px;
     padding-bottom: 50px;
     div.main {float: left; width: 500px; margin-left: 20px; }
     div.cover { float: left; width: 300px; }
@@ -44,3 +49,26 @@ div.publication {
     div.licenses {margin-top: 30px;}
 
 }
+
+div.links {
+  width: 100%; overflow: hidden;
+  margin-bottom: 10px;
+  a {
+    display: block;
+    padding: 5px 10px;
+    float: left;
+    border: 1px solid $c-link;
+    margin: -1px 0 0 -1px;
+    color: $c-text;
+  }
+}
+
+div.chapters {
+  margin: 10px 0 30px 0;
+  div.chapter {
+    padding: 0px 0;
+
+    img {margin-top: 5px; margin-bottom: -3px;}
+  }
+}             
+

@@ -14,6 +14,12 @@
 <body>
 
 <div id="page">
+  <div id="session">
+    <span class="name">Autoediciones Bucólicas:</span>
+    <%= link_to_unless_current 'El Sur', '/' %> /
+    <%= link_to_unless_current 'Remezclas', '/remezclas' %> /
+    <%= link_to_unless_current 'Blog' %>
+  </div>
   <div id="header">
     <%= image_tag 'cabeceras/libros.jpg' %>
   </div>
