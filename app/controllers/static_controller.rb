@@ -24,7 +24,7 @@ class StaticController < ApplicationController
   def remix
     @remixes = []
     add_remix('108211', 'María Toraño', '108211.maria_t.pdf')
-    add_remix('La sombra de Raquel/Aniko', 'aniko.chainsaw_gore', 'aniko.chainsaw_gore.pdf')
+    add_remix('La sombra de Raquel/Aniko', 'Chainsaw Gore', 'aniko.chainsaw_gore.pdf')
     add_remix('Remezcla del Sur - Meditaciones Metafísicas', 'Antonia Llera', 'antonia.llera.version.pdf')
     add_remix('Arenas', 'Mercedes Figueroa', 'Arenas.mercedes.figueroa.pdf')
     add_remix('Beso sin brújula', 'Erica', 'Besosinbrujula.erica.pdf')

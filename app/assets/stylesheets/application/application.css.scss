@@ -1,14 +1,14 @@
 
 $s-width: 975px;
-$c-link: #0c0;
+$c-link: #3D716D;
 $c-text: rgb(64, 64, 64);
 
 html {
     font: 13px/1.5 Helvetica Neue,Arial,Helvetica,'Liberation Sans',FreeSans,sans-serif;
 }
 body {background-color: transparent;}
-a {color: #0c0; }
-a:hover {color: #0E0;}
+a {color: $c-link; }
+a:hover {color: $c-link;}
 
 div.container {width: 100%; overflow: hidden;}
 
@@ -39,7 +39,7 @@ div.publication {
     margin-top: 20px;
     padding-bottom: 50px;
     div.main {float: left; width: 500px; margin-left: 20px; }
-    div.cover { float: left; width: 300px; }
+    div.cover { float: left; width: 300px; text-align: center;}
 
     div.content {
         margin: 20px 0;
@@ -75,4 +75,23 @@ div.list {
     img {float: left; margin: 0 1em 0.5em 0;}
   }
 }             
+
+a.remix {
+  span {
+    font-size: 18px;
+    color: white;
+    display: inline-block;
+    margin-top: 5px;
+    padding: 6px 19px 8px;
+    background-color: $c-link;
+    border-radius: 5px;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.32);
+    box-shadow: 0px 0px 1px darken($c-link, 10%);
+  }
+}
+a.remix:hover {
+  span {
+    box-shadow: 0 0 5px lighten($c-link, 20%);
+  }
+}
 
