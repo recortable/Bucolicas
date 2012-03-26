@@ -39,6 +39,7 @@ class StaticController < ApplicationController
     add_remix('Puentes que recuerdan dónde vivimos', 'María Glez Olmo', 'Puentes.vivimos.glez.olmo.pdf')
     add_remix('Puentes que amanecen mientras (no) dormimos', '@iguazelelhombre', 'Puentesqueamanecen.iguazel.pdf')
     add_remix('Remezcla del relatio "Mediana"', 'Rocío Trejo', 'Remezcla_Ro_Trejo_Mediana_ElSur.pdf')
+    add_remix('Remezcla Felipa', 'Felipa', 'Remezcla_Felipa.pdf')
     add_remix('El Sur', 'Gloria Santana', 'Sur.version.gloria.santana.pdf')
     add_remix('Un río. Un puente.', 'Fernanda Mangoderosa', 'un.rio.un.puente.fernanda.mangoderosa.pdf')
     add_remix('Una ciudad luminosa', 'Blanca', 'Unaciudadluminosa.BL.pdf')
