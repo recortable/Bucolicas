@@ -46,6 +46,7 @@ class StaticController < ApplicationController
     add_remix('Un relato', 'Albertine', 'unrelato.albertine.pdf')
     add_remix('Wild Word', 'La Señora Dubois', 'WILDWORLD.dubois.pdf')
     add_remix('Y si una no lo hace...', 'Anónima', 'Ysi.anonim.pdf')
+    add_remix('London life', 'Tom Daddesio', 'London Life_silvia_nanclares.pdf')
   end
 
   protected
