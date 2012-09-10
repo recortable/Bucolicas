@@ -1,12 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2.2'
-
-# Bundle edge Rails instead:
-# gem 'rails',     :git => 'git://github.com/rails/rails.git'
-
-gem 'sqlite3'
-
+gem 'rails', '~> 3.2.2'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -17,28 +11,17 @@ group :assets do
 end
 
 gem 'jquery-rails'
-#gem 'mercury-rails', git: 'https://github.com/jejacks0n/mercury.git', ref: 'a2b16bcdc9'
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# Use unicorn as the web server
 gem 'unicorn'
 
 # Deploy with Capistrano
 gem 'newrelic_rpm'
 
 
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
-
 group :development do
   gem 'capistrano'
-#  gem 'capistrano-unicorn'
 end
 
 group :test do
-  # Pretty printed test output
   gem 'turn', :require => false
 end
 
