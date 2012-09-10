@@ -47,6 +47,8 @@ class StaticController < ApplicationController
     add_remix('Wild Word', 'La Señora Dubois', 'WILDWORLD.dubois.pdf')
     add_remix('Y si una no lo hace...', 'Anónima', 'Ysi.anonim.pdf')
     add_remix('London life', 'Tom Daddesio', 'London Life_silvia_nanclares.pdf')
+    add_remix('Valverde era un norte, el mito del sur es rotativo', 'María Castelló', 'ElSur-MariaCastello.jpg')
+    add_remix('El dentista zurdo', 'Jordi Sobrerroca', 'El-dentista-zurdo.Jordi-Sobrerroca.pdf')
   end
 
   protected

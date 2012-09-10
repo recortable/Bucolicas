@@ -1,4 +1,7 @@
 
+## 10/09/2012
+- Añadir traducción y remezcla Castelló
+
 ## 8/04/2012
 - Una traducción a las remezclas
 

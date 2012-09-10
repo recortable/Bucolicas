@@ -5,18 +5,18 @@
 
     <div class="remixes list">
       <% @remixes.each do |remix| %>
-          <div class="remix item">
-            <a href="/remezclas/<%= remix[:file] %>">
-              <%= image_tag 'ui/play.png', alt: 'Descargar PDF del capítulo', width: 17, height: 17 %>
-              <%= remix[:title] %></a>. Por <%= remix[:author] %>
-          </div>
-      <% end %>
+        <div class="remix item">
+        <a href="/remezclas/<%= remix[:file] %>">
+          <%= image_tag 'ui/play.png', alt: 'Descargar PDF del capítulo', width: 17, height: 17 %>
+          <%= remix[:title] %></a>. Por <span class="autora"><%= remix[:author] %></span>
+      </div>
+    <% end %>
     </div>
   </div>
   <div class="cover">
     <%= link_to '/' do %>
       <%= image_tag 'elsur/portada.jpg', width: '259', height: '400' %>
-    <% end %>
+  <% end %>
   </div>
 
 </div>
